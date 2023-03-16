@@ -919,3 +919,4 @@
    	</div> <!-- /contact-info -->
 
 	</section> <!-- /contact -->
+    @endsection
