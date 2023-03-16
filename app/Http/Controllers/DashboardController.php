@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function dashboard($option){
       if($option == 1){
-        return view('master');
+        return view('pages.home');
       }elseif($option == 2){
 
       }

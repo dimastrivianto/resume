@@ -38,9 +38,7 @@
    ================================================== -->
    @include('components.menu')
 
-<div>
-   	@yield('contents')
-</div>
+   @yield('contents')
 
    <!-- about section
    ================================================== -->
