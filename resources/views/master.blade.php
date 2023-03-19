@@ -47,7 +47,7 @@
    <!-- footer
    ================================================== -->
    @include('components.footer')
-   
+
 
    <div id="preloader">
     	<div id="loader"></div>
@@ -55,11 +55,26 @@
 
    <!-- Java Script
    ================================================== -->
-   <script src="{{ asset('js/jquery-2.1.3.min.js')}}"></script>
-   <script src="{{ asset('js/plugins.js')}}"></script>
-   <script src="{{ asset('js/main.js')}}"></script>
 
-   @yield('jsPage')
+   <script src="{{ asset('js/jquery-2.1.3.min.js')}}"></script>
+
+   {{-- <script>
+     $('#contactForms').on('submit', function(e) {
+       e.preventDefault();
+       console.log('jalan');
+     })
+   </script> --}}
+   {{-- <script>
+     var formUrl = '{{route("postForm")}}';
+     var token = $('meta[name="csrf-token"]').attr('content');
+     console.log(formUrl ,'iya');
+   </script> --}}
+   <script src="{{ asset('js/plugins.js')}}"></script>
+
+
+   <script src="{{ asset('js/main.js')}}"></script>
+@yield('jsPage')
+
 
 </body>
 

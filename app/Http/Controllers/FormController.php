@@ -10,8 +10,8 @@ class FormController extends Controller
 {
     public function postForm(Request $request){
         $rules = [
-            'name'=>'required',
-            'email'=>'required|unique:guest,email',
+            'contactName'=>'required',
+            'contactEmail'=>'required|unique:guest,email',
         ];
 
         $validator = Validator::make($request->all(), $rules);
@@ -21,18 +21,18 @@ class FormController extends Controller
 
         try{
             $insert= DB::table('guest')->insert([
-                'name'=> $request->name,
-                'email'=> $request->email,
-                'phone'=> $request->phone,
-                'subject'=> $request->subject,
-                'message'=> $request->message
+                'name'=> $request->contactName,
+                'email'=> $request->contactEmail,
+                'phone'=> $request->contactPhone,
+                'subject'=> $request->contactSubject,
+                'message'=> $request->contactMessage
             ]);
 
             return response()->json('Success', 200);
-            
+
         }catch(\Exception $error){
             return response()->json($error->getMessage(), 422);
         }
-        
+
     }
 }

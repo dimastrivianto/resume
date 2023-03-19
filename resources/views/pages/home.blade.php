@@ -827,9 +827,9 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="{{route('postForm')}}">
+            <form name="contactForms" id="contactForms" method="post" action="">
+              {{-- @csrf --}}
       			<fieldset>
-					@csrf
                   <div class="form-field">
  						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                   </div>
@@ -924,8 +924,55 @@
     @endsection
 
 	@section('jsPage')
+    <script>
+      $('#contactForms').validate({
+        // e.preventDefault();
+        submitHandler: function(form) {
+          var sLoader = $('#submit-loader');
+          console.log('jalan');
+          $.ajax({
+
+    		      type: "POST",
+    			  headers: $('meta[name="csrf-token"]').attr('content'),
+    		      url: '{{route("postForm")}}',
+    		      data: $(form).serialize(),
+    		      beforeSend: function() {
+
+    		      	sLoader.fadeIn();
+
+    		      },
+    		      success: function(msg) {
+                  console.log(msg);
+    	            // Message was sent
+    	            if (msg == 'OK') {
+    	            	sLoader.fadeOut();
+    	               $('#message-warning').hide();
+    	               $('#contactForm').fadeOut();
+    	               $('#message-success').fadeIn();
+    	            }
+    	            // There was an error
+    	            else {
+    	            	sLoader.fadeOut();
+    	               $('#message-warning').html(msg);
+    		            $('#message-warning').fadeIn();
+    	            }
+
+    		      },
+    		      error: function() {
+
+    		      	sLoader.fadeOut();
+    		      	$('#message-warning').html("Something went wrong. Please try again.");
+    		         $('#message-warning').fadeIn();
+
+    		      }
+
+    	      });
+          }
+      })
+    </script>
 	   <script>
-		 var formUrl = '{{route("postForm")}}';
-		 var token = $('meta[name="csrf-token"]').attr('content');
+		 // var formUrl = '{{route("postForm")}}';
+		 // var token = $('meta[name="csrf-token"]').attr('content');
+     // console.log(formUrl, 'jalan');
 	   </script>
 	@endsection
