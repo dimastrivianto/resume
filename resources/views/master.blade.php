@@ -11,6 +11,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
+   <meta name="csrf-token" content="{{ csrf_token() }}" />
+
    <!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -56,6 +58,8 @@
    <script src="{{ asset('js/jquery-2.1.3.min.js')}}"></script>
    <script src="{{ asset('js/plugins.js')}}"></script>
    <script src="{{ asset('js/main.js')}}"></script>
+
+   @yield('js')
 
 </body>
 
