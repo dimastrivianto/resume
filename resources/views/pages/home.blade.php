@@ -51,7 +51,7 @@
 
    				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+   				<p class="lead">A detail-oriented and highly-motivated person who is always eager to learn. Skilled in PHP using Laravel framework and Javascript, cPanel, MySQL, Pusher, Git, Proficient in Problem Solving, and Committed to Delivering High-Quality Code.</p>
    			</div>
 
    		</div>
@@ -62,28 +62,28 @@
    		<div class="col-six tab-full">
 
    			<h3>Profile</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
 
    			<ul class="info-list">
    				<li>
    					<strong>Fullname:</strong>
-   					<span>Juan Dela Cruz</span>
+   					<span>Dimas Trivianto</span>
    				</li>
    				<li>
    					<strong>Birth Date:</strong>
-   					<span>September 28, 1987</span>
+   					<span>May 09, 1990</span>
    				</li>
    				<li>
    					<strong>Job:</strong>
-   					<span>Freelancer, Frontend Developer</span>
+   					<span>Backend Developer</span>
    				</li>
    				<li>
    					<strong>Website:</strong>
-   					<span>www.kardswebsite.com</span>
+   					<span>www.dimastrivianto.site</span>
    				</li>
    				<li>
    					<strong>Email:</strong>
-   					<span>me@kardswebsite.com</span>
+   					<span>dimastrivianto@gmail.com</span>
    				</li>
 
    			</ul> <!-- /info-list -->
@@ -93,7 +93,7 @@
    		<div class="col-six tab-full">
 
    			<h3>Skills</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
 
 				<ul class="skill-bars">
 				   <li>
@@ -827,14 +827,17 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
+            <form name="contactForm" id="contactForm" method="post" action="{{route('postForm)}}">
       			<fieldset>
-
+					@csrf
                   <div class="form-field">
  						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                   </div>
                   <div class="form-field">
 	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+				   <div class="form-field">
+	      			   <input name="contactPhone" type="text" id="contactPhone" placeholder="Phone" value="" required="">
 	               </div>
                   <div class="form-field">
 	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
@@ -880,9 +883,9 @@
    			<h5>Where to find me</h5>
 
    			<p>
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA<br>
-            94043 US
+            Jalan Dua Sembilan no:63-64<br>
+            Duren Sawit, Jakarta Timur<br>
+            13440
             </p>
 
    		</div>
@@ -895,9 +898,9 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>someone@kardswebsite.com<br>
-			   	info@kardswebsite.com
-			   </p>
+   			<p>
+				dimastriviano@gmail.com
+			</p>
 
    		</div>
 
@@ -909,10 +912,9 @@
 
    			<h5>Call Me At</h5>
 
-   			<p>Phone: (+63) 555 1212<br>
-			   	Mobile: (+63) 555 0100<br>
-			     	Fax: (+63) 555 0101
-			   </p>
+   			<p>
+				Phone: (+62) 87887977838
+			</p>
 
    		</div>
 
@@ -920,3 +922,10 @@
 
 	</section> <!-- /contact -->
     @endsection
+
+	@section('js')
+	   <script>
+		 var formUrl = '{{route("postForm")}}';
+		 var token = $('meta[name="csrf-token"]').attr('content');
+	   </script>
+	@endsection
