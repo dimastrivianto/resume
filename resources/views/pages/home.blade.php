@@ -923,7 +923,7 @@
 	</section> <!-- /contact -->
     @endsection
 
-	@section('js')
+	@section('jsPage')
 	   <script>
 		 var formUrl = '{{route("postForm")}}';
 		 var token = $('meta[name="csrf-token"]').attr('content');
