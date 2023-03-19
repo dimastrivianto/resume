@@ -827,7 +827,7 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="{{route('postForm)}}">
+            <form name="contactForm" id="contactForm" method="post" action="{{route('postForm')}}">
       			<fieldset>
 					@csrf
                   <div class="form-field">
