@@ -20,13 +20,16 @@
  	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="{{ asset('css/base.css')}}">
-   <link rel="stylesheet" href="{{ asset('css/main.css')}}">
    <link rel="stylesheet" href="{{ asset('css/vendor.css')}}">
 
+   {{-- <link rel="stylesheet" href="{{ asset('css/aos.css')}}"> --}}
+   {{-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}"> --}}
+   <link rel="stylesheet" href="{{ asset('css/main.css')}}">
    <!-- script
    ================================================== -->
 	<script src="{{ asset('js/modernizr.js')}}"></script>
 	<script src="{{ asset('js/pace.min.js')}}"></script>
+  <script src="https://kit.fontawesome.com/ec1da136c7.js" crossorigin="anonymous"></script>
 
    <!-- favicons
 	================================================== -->
@@ -70,10 +73,10 @@
      console.log(formUrl ,'iya');
    </script> --}}
    <script src="{{ asset('js/plugins.js')}}"></script>
-
-
+   {{-- <script src="{{ asset('js/aos.js')}}"></script> --}}
+  <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
    <script src="{{ asset('js/main.js')}}"></script>
-@yield('jsPage')
+   @yield('jsPage')
 
 
 </body>

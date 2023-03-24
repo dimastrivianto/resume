@@ -49,85 +49,185 @@
 
    			<div class="intro-info">
 
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+   				<img src="{{ asset('images/dimas-trivianto.jpg')}}" alt="Profile Picture">
 
    				<p class="lead">A detail-oriented and highly-motivated person who is always eager to learn. Skilled in PHP using Laravel framework and Javascript, cPanel, MySQL, Pusher, Git, Proficient in Problem Solving, and Committed to Delivering High-Quality Code.</p>
-   			</div>
+
+          {{-- <div class="row"> --}}
+              <div class="col-six">
+                <ul class="info-list">
+           				<li>
+           					<strong>Fullname:</strong>
+           					<span>Dimas Trivianto</span>
+           				</li>
+           				<li>
+           					<strong>Birth Date:</strong>
+           					<span>May 09, 1990</span>
+           				</li>
+           				<li>
+           					<strong>Job:</strong>
+           					<span>Backend Developer</span>
+           				</li>
+           			</ul>
+              </div>
+              <div class="col-six">
+                <ul class="info-list">
+                  <li>
+           					<strong>Website:</strong>
+           					<span>www.dimastrivianto.site</span>
+           				</li>
+           				<li>
+           					<strong>Email:</strong>
+           					<span>dimastrivianto@gmail.com</span>
+           				</li>
+           			</ul>
+              </div>
+          {{-- </div> --}}
+        </div>
 
    		</div>
    	</div> <!-- /section-intro -->
 
-   	<div class="row about-content">
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="service">
+      {{-- <div class="container" data-aos="fade-up"> --}}
 
-   		<div class="col-six tab-full">
+        <div class="section-title">
+          <h2>Some of my skills.</h2>
+          {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
+        </div>
 
-   			<h3>Profile</h3>
-   			<!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
+        <div class="row">
 
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Dimas Trivianto</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>May 09, 1990</span>
-   				</li>
-   				<li>
-   					<strong>Job:</strong>
-   					<span>Backend Developer</span>
-   				</li>
-   				<li>
-   					<strong>Website:</strong>
-   					<span>www.dimastrivianto.site</span>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<span>dimastrivianto@gmail.com</span>
-   				</li>
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-laravel">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-laravel"></i>
+                  </div>
+                  <h4><a href="">Laravel</a></h4>
+                  <p>Laravel is a web application framework with expressive, elegant syntax.</p>
+                </div>
+              </div>
+            </li>
 
-   			</ul> <!-- /info-list -->
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-js">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-javascript"></i>
+                  </div>
+                  <h4><a href="">Javascript</a></h4>
+                  <p>JavaScript is a high-level, dynamic, and interpreted programming language that is commonly used to create interactive web pages and web applications.</p>
+                </div>
+              </div>
+            </li>
 
-   		</div>
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-sql">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-sql"></i>
+                  </div>
+                  <h4><a href="">SQL</a></h4>
+                  <p>Structured Query Language (SQL) is a standardized programming language that is used to manage relational databases and perform various operations on the data in them.</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-html">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-html"></i>
+                  </div>
+                  <h4><a href="">HTML</a></h4>
+                  <p>HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-css">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-css"></i>
+                  </div>
+                  <h4><a href="">CSS</a></h4>
+                  <p>CSS is rules to arrange some components in a web so that it will be more structured and efficient.</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-python">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    {{-- <i class="bx bxl-python"></i> --}}
+                    <img src="" class="python-icon">
+                  </div>
+                  <h4><a href="">Python</a></h4>
+                  <p>Python is a programming language that lets you work quickly and integrate systems more effectively.</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-git">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-git"></i>
+                  </div>
+                  <h4><a href="">GIT</a></h4>
+                  <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="icon-boxes iconbox-cpanel">
+                  <div class="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                    </svg>
+                    <i class="bx bxl-cpanel"></i>
+                  </div>
+                  <h4><a href="">cPanel</a></h4>
+                  <p>cPanel provides the most reliable and intuitive server and site management platform.</p>
+                </div>
+              </div>
+            </li>
 
-   		<div class="col-six tab-full">
+          </ul>
 
-   			<h3>Skills</h3>
-   			<!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
+        </div>
 
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>JQuery</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>PHP</strong>
-				   </li>
-				   <li>
 
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
-				   </li>
-
-				</ul> <!-- /skill-bars -->
-
-   		</div>
-
-   	</div>
+      {{-- </div> --}}
+    </section><!-- End Services Section -->
 
    	<div class="row button-section">
    		<div class="col-twelve">
    			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+   			<a href="#no" title="Download CV" class="button button-primary" onclick="downloadCv();">Download CV</a>
    		</div>
    	</div>
 
@@ -144,7 +244,7 @@
    			<h5>Resume</h5>
    			<h1>More of my credentials.</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			{{-- <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> --}}
 
    		</div>
    	</div> <!-- /section-intro-->
@@ -168,13 +268,17 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>UI Designer</h3>
-	   					<p>July 2015 - Present</p>
+	   					<h3>Front-End Developer</h3>
+	   					<p>2020 - 2021</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Awesome Studio</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   					<h4>PT Yokesen Teknologi Indonesia</h4>
+	   					<p>
+                As a frontend developer, I am responsible for developed responsive websites using HTML, CSS, and JavaScript and Ajax.
+                Managed codebase using Git version control and collaborated with the team. I have been conducting peer code reviews to ensure the best solutions for developing the website interface.
+                I connect the frontend with the backend through ajax or laravel's controller.
+              </p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -182,35 +286,22 @@
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
+	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Front-end Developer</h3>
-	   					<p>July 2014 - June 2015</p>
+	   					<h3>Back-end Developer</h3>
+	   					<p>2021 - 2023</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Super Cool Agency</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Web Designer</h3>
-	   					<p>May 2013 - June 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Great Designs Studio</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   					<h4>PT Yokesen Teknologi Indonesia</h4>
+	   					<p>
+                As a backend developer, I create APIs to handle and process the data. I also connect to third party APIs, like marketplace Tokopedia API, Shopee APIs, Blibli APIs, TikTok Shop Api, Mailgun API, and more.
+                use third-party packages such as Guzzle to send HTTP requests, Twillio to send messages to users, use pusher to create realtime experience for the users and more.
+                I design database structure. Deploy projects into live server and maintain the server. I also collaborate with others programmer using git, create UAT (User Acceptance Testing) scenario, optimize backend performance and create APIs documentations.
+                I use Laravel and SQL as main technologies to develop the backend side of a website, but I'm also open to using other languages, frameworks, or types of databases since I enjoy trying new things.
+              </p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -236,17 +327,17 @@
    				<div class="timeline-block">
 
 	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
+	   					<i class="fa fa-graduation-cap"></i>
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Master Degree</h3>
-	   					<p>July 2015 - Present</p>
+	   					<h3>Technical certification</h3>
+	   					<p>2020</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>University of Life</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   					<h4>Purwadhika Digital Technology School</h4>
+	   					<p>At Purwadhika Digital Technology School, i learned how to be a full-stack JavaScript programmer using React.js and Node.Js as the main technologies. for the database, I learned both SQL and NoSQL. I also learned React Native to develop mobile apps.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -259,30 +350,12 @@
 
 	   				<div class="timeline-header">
 	   					<h3>Bachelor Degree</h3>
-	   					<p>July 2014 - June 2015</p>
+	   					<p>2013 - 2015</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>State Design University</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Bachelor Degree</h3>
-	   					<p>May 2013 - June 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Design College</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   					<h4>Darma Persada University</h4>
+	   					<p>At Darma Persada University, I learned how to read and write Chinese Characters and also how to speak and listen in Mandarin</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -306,7 +379,7 @@
    			<h5>Portfolio</h5>
    			<h1>Check Out Some of My Works.</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			{{-- <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> --}}
 
    		</div>
    	</div> <!-- /section-intro-->
@@ -320,13 +393,13 @@
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	               	<img src="{{ asset('images/gudangin.png')}}" alt="Liberty">
 	                  <a href="#modal-01" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Liberty</h3>
+		     					       <h3 class="folio-title">Gudangin</h3>
 		     					    	 <span class="folio-types">
-		     					       	  Graphic Design
+		     					       	  Website Development
 		     					       </span>
 		     					   </div>
 	                     </div>
@@ -336,59 +409,11 @@
 
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+	               	<img src="{{ asset('images/fitbarkada.png')}}" alt="Shutterbug">
 	               	<a href="#modal-02" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Shutterbug</h3>
-		     					    	<span class="folio-types">
-		     					       	  Web Design
-		     					      </span>
-		     					   </div>
-	                     </div>
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
-	                  <a href="#modal-03" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Clouds</h3>
-		     					    	<span class="folio-types">
-		     					       	  Web Design
-		     					      </span>
-		     					   </div>
-	                     </div>
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
-	                  <a href="#modal-04" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Beetle</h3>
-		     					    	<span class="folio-types">
-		     					       	  Branding
-		     					      </span>
-		     					   </div>
-	                     </div>
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-	                  <a href="#modal-05" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Lighthouse</h3>
+	                     		<h3 class="folio-title">Fitbarkada</h3>
 		     					    	<span class="folio-types">
 		     					       	  Web Development
 		     					      </span>
@@ -399,6 +424,54 @@
 	        		</div> <!-- /folio-item -->
 
 	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{{ asset('images/ngabuburit.png')}}"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Ngabuburit 2023</h3>
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{{ asset('images/fib.png')}}" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">FIB Partners</h3>
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="{{ asset('images/pojok-trading.png')}}" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Pojok Trading</h3>
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            {{-- <div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/salad.jpg" alt="Salad">
 	                  <a href="#modal-06" class="overlay">
@@ -412,7 +485,7 @@
 	                     </div>
 	                  </a>
 	               </div>
-	        		</div> <!-- /folio-item -->
+	        		</div> <!-- /folio-item --> --}}
 
 	            <!-- modal popups - begin
 	            ============================================================= -->
@@ -423,14 +496,14 @@
 				     	</div>
 
 					   <div class="description-box">
-					      <h4>Liberty</h4>
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Gudangin</h4>
+					      <p>Gudangin is a cloud warehouse that can help you manage orders and stocks easily. you can manage multiple stores in multiple marketplace in just one Platform</p>
 
 					      <div class="categories">Web Development</div>
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="http://dashboard.gudangin.id" target="_blank">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
 
@@ -443,14 +516,14 @@
 				     	</div>
 
 					   <div class="description-box">
-					      <h4>Shutterbug</h4>
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Fitbarkada</h4>
+					      <p>A community-based website that can be used to promote events or products. It's designed with a mobile-first approach.</p>
 
-					      <div class="categories">Web Design</div>
+					      <div class="categories">Web Development</div>
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="https://fitbarkada.yokesen.com" target="_blank">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
 
@@ -463,14 +536,14 @@
 				     	</div>
 
 					   <div class="description-box">
-					      <h4>Clouds</h4>
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Ngabuburit 2023</h4>
+					      <p>A community-based website that's built for 2023 Ramadan season. it has features such as Mading (where users can post and like comment), auctions (where users can compete to win products), schedule (list of schedule) and more.</p>
 
-					      <div class="categories">Web Design</div>
+					      <div class="categories">Web Development</div>
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="https://ngabuburit2023.id/">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
 
@@ -483,14 +556,14 @@
 				     	</div>
 
 					   <div class="description-box">
-					      <h4>Beetle</h4>
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>FIB Partners</h4>
+					      <p>A website that is built for forex trading.</p>
 
-					      <div class="categories">Branding</div>
+					      <div class="categories">Web Development</div>
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="https://fibpartners.com/">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
 
@@ -503,14 +576,14 @@
 				     	</div>
 
 					   <div class="description-box">
-					      <h4>Lighthouse</h4>
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Pojok Trading</h4>
+					      <p>A community-based website for forex trader, where they can buy trading signal</p>
 
 					      <div class="categories">Web Development</div>
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
+			            <a href="#noLink">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
 
@@ -549,32 +622,6 @@
 	</section> <!-- /portfolio -->
 
 
-	<!-- CTA Section
-   ================================================== -->
-	<section id="cta" class="grey-section">
-
-   	<div class="row cta-content">
-
-   		<div class="col-twelve section-ads">
-
-	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
-
-		      <p class="lead">
-		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
-				</p>
-
-				<div class="action">
-			      <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-		      </div>
-
-   		</div>
-
-   	</div> <!-- /cta-content -->
-
-   </section> <!-- /cta -->
-
 
 	<!-- services Section
    ================================================== -->
@@ -588,7 +635,7 @@
    			<h5>Services</h5>
    			<h1>What Can I Do For You?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			{{-- <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> --}}
 
    		</div>
    	</div> <!-- /section-intro -->
@@ -597,7 +644,7 @@
 
    		<div id="owl-slider" class="owl-carousel services-list">
 
-	      	<div class="service">
+	      	{{-- <div class="service">
 
 	      		<span class="icon"><i class="icon-earth"></i></span>
 
@@ -610,7 +657,7 @@
 
 	         	</div>
 
-				</div> <!-- /service -->
+				</div> <!-- /service --> --}}
 
 				<div class="service">
 
@@ -620,7 +667,8 @@
 
 	            	<h3>Web Development</h3>
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		          <p class="desc">
+                If you're looking for a simple landing page or a complex website platform, i've got you covered. I take the time to understand your business goals and target audience to ensure that your website is designed to meet your unique needs.
 	         		</p>
 
 	            </div>
@@ -629,63 +677,66 @@
 
 			   <div class="service">
 
-			   	<span class="icon"><i class="icon-paint-brush"></i></span>
+			   	<span class="icon"><i class="fa fa-database"></i></span>
 
 	            <div class="service-content">
 
-	            	<h3>Branding</h3>
+	            	<h3>Database Structure</h3>
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		            <p class="desc">
+                  My database structure services include everything from schema design to query optimization. I ensure that your database is designed to scale and handle large amounts of data, while also being easy to use and maintain.
 	        			</p>
 
 	            </div>
 
 			   </div> <!-- /service -->
 
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>
-
-	            <div class="service-content">
-
-	            	<h3>UI/UX Design</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p>
-
-	            </div>
-
-				</div> <!-- /service -->
 
 			   <div class="service">
 
-			   	<span class="icon"><i class="icon-image"></i></span>
+			   	<span class="icon"><i class="icon-api"></i></span>
 
 	            <div class="service-content">
 
-	            	<h3>Graphics Design</h3>
+	            	 <h3>Connect Third-Party API</h3>
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		            <p class="desc">
+                  I can help you seamlessly integrate APIs into your software. Whether you need to connect to payment gateways, social media platforms, or other services, I can help.
 	        			</p>
 
 	            </div>
 
 			   </div> <!-- /service -->
 
-			   <div class="service">
+         {{-- <div class="service">
 
-			   	<span class="icon"><i class="icon-chat"></i></span>
+ 					<span class="icon"><i class="icon-toggles"></i></span>
 
-	            <div class="service-content">
+ 	            <div class="service-content">
 
-	            	 <h3>Consultancy</h3>
+ 	            	<h3>UI/UX Design</h3>
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p>
+ 		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+ 	         		</p>
 
-	            </div>
+ 	            </div>
 
-			   </div> <!-- /service -->
+ 				</div> <!-- /service -->
+
+ 			   <div class="service">
+
+ 			   	<span class="icon"><i class="icon-image"></i></span>
+
+ 	            <div class="service-content">
+
+ 	            	<h3>Graphics Design</h3>
+
+ 		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+ 	        			</p>
+
+ 	            </div>
+
+ 			   </div> <!-- /service --> --}}
 
 	      </div> <!-- /services-list -->
 
@@ -701,16 +752,16 @@
 		<div class="row">
 			<div class="col-twelve">
 
-				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+				<div class="block-1-2 block-s-1-2 block-tab-1-2 block-mob-full stats-list">
 
 					<div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-pencil-ruler"></i>
 						</div>
-
+            <span class="stat-title">More Than</span>
 						<h3 class="stat-count">
-							1500
+						   7
 						</h3>
 
 						<h5 class="stat-title">
@@ -719,7 +770,7 @@
 
 					</div> <!-- /stat -->
 
-					<div class="bgrid stat">
+					{{-- <div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-users"></i>
@@ -733,9 +784,9 @@
 							Happy Clients
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> <!-- /stat --> --}}
 
-					<div class="bgrid stat">
+					{{-- <div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-badge"></i>
@@ -749,9 +800,9 @@
 							Awards Received
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> <!-- /stat --> --}}
 
-					<div class="bgrid stat">
+					{{-- <div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-light-bulb"></i>
@@ -765,9 +816,9 @@
 							Crazy Ideas
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> <!-- /stat --> --}}
 
-					<div class="bgrid stat">
+					{{-- <div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-cup"></i>
@@ -781,16 +832,16 @@
 							Coffee Cups
 						</h5>
 
-					</div> <!-- /stat -->
+					</div> <!-- /stat --> --}}
 
 					<div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-clock"></i>
 						</div>
-
+            <span class="stat-title">More Than</span>
 						<h3 class="stat-count">
-							7200
+							21900
 						</h3>
 
 						<h5 class="stat-title">
@@ -817,7 +868,7 @@
    			<h5>Contact</h5>
    			<h1>I'd Love To Hear From You.</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">Please note that this website is still under development. If you have any questions, comments or feature requests, I would love to hear from you! Don't hesitate to fill out the contact form, and I will be in touch as soon as possible.</p>
 
    		</div>
    	</div> <!-- /section-intro -->
@@ -925,6 +976,22 @@
 
 	@section('jsPage')
     <script>
+      function downloadCv() {
+
+        let fileUrl = "{{ asset('images/Dimas-Trivianto-cv.pdf')}}";
+        let link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'Dimas-Trivianto-cv.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        let newTabUrl = "{{ asset('images/Dimas-Trivianto-cv.pdf')}}";
+        let newTab = window.open(newTabUrl, '_blank');
+
+      }
+    </script>
+    <script>
       $('#contactForms').validate({
         // e.preventDefault();
         submitHandler: function(form) {
@@ -970,9 +1037,4 @@
           }
       })
     </script>
-	   <script>
-		 // var formUrl = '{{route("postForm")}}';
-		 // var token = $('meta[name="csrf-token"]').attr('content');
-     // console.log(formUrl, 'jalan');
-	   </script>
 	@endsection

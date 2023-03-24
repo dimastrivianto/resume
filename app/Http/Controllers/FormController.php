@@ -25,7 +25,8 @@ class FormController extends Controller
                 'email'=> $request->contactEmail,
                 'phone'=> $request->contactPhone,
                 'subject'=> $request->contactSubject,
-                'message'=> $request->contactMessage
+                'message'=> $request->contactMessage,
+                'created_at'=>date('Y-m-d H:i:s')
             ]);
 
             return response()->json('Success', 200);

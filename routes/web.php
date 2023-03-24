@@ -13,8 +13,8 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/dashboard/{option}', [DashboardController::class, 'dashboard']);
+Route::get('/', [DashboardController::class, 'dashboard']);

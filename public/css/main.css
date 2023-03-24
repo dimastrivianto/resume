@@ -1096,7 +1096,7 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	max-width: 250px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
@@ -1419,6 +1419,11 @@ header .logo a {
 	color: #cc005f;
 }
 
+.info-list li {
+	text-align: left;
+	color: #888888;
+}
+
 /**
  * responsive:
  * Intro
@@ -1504,15 +1509,15 @@ header .logo a {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: auto;
+	width: 11rem;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
-	float: left;
+	margin: 0 0 1.5rem 0;
+	float: right;
 }
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+	/* padding-left: 5rem; */
 }
 
 .about-content {
@@ -1580,9 +1585,9 @@ header .logo a {
 		height: 7.8rem;
 		width: 7.8rem;
 	}
-	.intro-info .lead {
-		padding-left: 11rem;
-	}
+	/* .intro-info .lead {
+		padding-left: 5rem;
+	} */
 	.about-content h3 {
 		text-align: center;
 	}
@@ -2175,6 +2180,12 @@ header .logo a {
 	background: #FF0077;
 }
 
+.icon-api{
+	/* z-index: 1; */
+	width: 5.2rem;
+	content: url('https://dimastrivianto.site/public/images/api-icon.png');
+}
+
 
 /**
  * ===================================================================
@@ -2413,6 +2424,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
 	text-align: center;
+	color: white;
 }
 .contact-info .collapse {
 	padding: 0;
@@ -2597,3 +2609,374 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+section#service.service{
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.section-title h2{
+	font-family: "poppins-semibold", serif;
+	font-size: 3.6rem;
+	color: #313131;
+	line-height: 1.25;
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+.service .icon-boxes {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+.service .icon-boxes .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.service .icon-boxes .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.service .icon-boxes .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service .icon-boxes .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.service .icon-boxes h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.service .icon-boxes h4 a {
+  color: #45505b;
+  transition: ease-in-out 0.3s;
+}
+
+.service .icon-boxes p {
+  line-height: 24px;
+	color: #888888;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.service .icon-boxes:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+.service .iconbox-laravel i {
+  color: #F52D21;
+}
+
+.service .iconbox-laravel:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-laravel:hover .icon path {
+  fill: #F52D21;
+}
+
+.service .iconbox-js i {
+  color: #EDD719;
+}
+
+.service .iconbox-js:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-js:hover .icon path {
+  fill: #EDD719;
+}
+
+.service .iconbox-sql i {
+  color: #27638B;
+}
+
+.service .iconbox-sql:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-sql:hover .icon path {
+  fill: #27638B;
+}
+
+.service .iconbox-html i {
+  color: #DD4B24;
+}
+
+.service .iconbox-html:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-html:hover .icon path {
+  fill: #DD4B24;
+}
+
+.service .iconbox-css i {
+  color: #254BDD;
+}
+
+.service .iconbox-css:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-css:hover .icon path {
+  fill: #254BDD;
+}
+
+.service .iconbox-python i {
+  color: #3570A0;
+}
+
+.service .iconbox-python:hover .icon img {
+  color: #fff;
+	content: url('https://dimastrivianto.site/public/images/python-white.png');
+}
+
+.service .iconbox-python:hover .icon path {
+	fill: #3570A0;
+}
+
+.service .iconbox-git i {
+  color: #E94D31;
+}
+
+.service .iconbox-git:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-git:hover .icon path {
+  fill: #E94D31;
+}
+
+.service .iconbox-cpanel i {
+  color: #EE692C;
+}
+
+.service .iconbox-cpanel:hover .icon i {
+  color: #fff;
+}
+
+.service .iconbox-cpanel:hover .icon path {
+  fill: #EE692C;
+}
+
+.bxl-laravel:before{
+	font-family: FontAwesome;
+	content: "\f3bd";
+}
+
+.bxl-javascript:before{
+	font-family: FontAwesome;
+	content: "\f3b9";
+}
+
+.bxl-sql:before{
+	font-family: FontAwesome;
+	content: "\f1c0";
+}
+
+.bxl-html:before{
+	font-family: FontAwesome;
+	content: "\f13b";
+}
+
+.bxl-css:before{
+	font-family: FontAwesome;
+	content: "\f38b";
+}
+
+.bxl-python:before{
+	font-family: FontAwesome;
+	content: "\f3e2";
+}
+
+.bxl-git:before{
+	font-family: FontAwesome;
+	content: "\f841";
+}
+
+.bxl-cpanel:before{
+	font-family: FontAwesome;
+	content: "\f388";
+}
+
+.python-icon{
+	z-index: 1;
+	content: url('https://dimastrivianto.site/public/images/python.png');
+}
+
+
+body {
+  font-family: "Oxygen", sans-serif;
+  color: #050505;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  position: relative;
+  max-height: 250px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_price {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 0.25rem;
+  background-color: #c89b3f;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card_price span {
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color: #c89b3f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+	border: 1px solid #ebebeb;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 16px 8px 8px 0;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.card_title {
+  position: relative;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_title::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c89b3f;
+  content: "";
+}
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid #c89b3f;
+}
+
+.card_text p {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card_text p:last-child {
+  margin: 0;
+}
