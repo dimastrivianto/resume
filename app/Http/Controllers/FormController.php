@@ -29,6 +29,8 @@ class FormController extends Controller
                 'created_at'=>date('Y-m-d H:i:s')
             ]);
 
+            EmailController::sendEmail($request->contactName, $request->contactEmail);
+
             return response()->json('Success', 200);
 
         }catch(\Exception $error){

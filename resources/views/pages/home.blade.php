@@ -391,15 +391,45 @@
    			<!-- portfolio-wrapper -->
 	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
+           <div class="bgrid folio-item">
+               <div class="item-wrap">
+               	<img src="{{ asset('images/asc.png')}}" alt="Liberty">
+                  <a href="#modal-01" class="overlay">
+                     <div class="folio-item-table">
+                     	<div class="folio-item-cell">
+	     					       <h3 class="folio-title">Bayer ASC</h3>
+	     					    	 <span class="folio-types">
+	     					       	  Web Development
+	     					       </span>
+	     					   </div>
+                     </div>
+                  </a>
+               </div>
+        		</div>
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                <img src="{{ asset('images/agerabot.png')}}" alt="Liberty">
+                  <a href="#modal-02" class="overlay">
+                     <div class="folio-item-table">
+                      <div class="folio-item-cell">
+                       <h3 class="folio-title">Agerabot</h3>
+                       <span class="folio-types">
+                          Web Development
+                       </span>
+                   </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="{{ asset('images/gudangin.png')}}" alt="Liberty">
-	                  <a href="#modal-01" class="overlay">
+	                  <a href="#modal-03" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 		     					       <h3 class="folio-title">Gudangin</h3>
 		     					    	 <span class="folio-types">
-		     					       	  Website Development
+		     					       	  Web Development
 		     					       </span>
 		     					   </div>
 	                     </div>
@@ -410,7 +440,7 @@
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="{{ asset('images/fitbarkada.png')}}" alt="Shutterbug">
-	               	<a href="#modal-02" class="overlay">
+	               	<a href="#modal-04" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 	                     		<h3 class="folio-title">Fitbarkada</h3>
@@ -426,7 +456,7 @@
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="{{ asset('images/ngabuburit.png')}}"alt="Clouds">
-	                  <a href="#modal-03" class="overlay">
+	                  <a href="#modal-05" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 	                     		<h3 class="folio-title">Ngabuburit 2023</h3>
@@ -442,7 +472,7 @@
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="{{ asset('images/fib.png')}}" alt="Beetle">
-	                  <a href="#modal-04" class="overlay">
+	                  <a href="#modal-06" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 	                     		<h3 class="folio-title">FIB Partners</h3>
@@ -458,7 +488,7 @@
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="{{ asset('images/pojok-trading.png')}}" alt="Lighthouse">
-	                  <a href="#modal-05" class="overlay">
+	                  <a href="#modal-07" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 	                     		<h3 class="folio-title">Pojok Trading</h3>
@@ -489,7 +519,45 @@
 
 	            <!-- modal popups - begin
 	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">
+              <div id="modal-01" class="popup-modal slider mfp-hide">
+
+  				     	<div class="media">
+  				     		<img src="{{ asset('images/asc.png')}}" alt="" />
+  				     	</div>
+
+  					   <div class="description-box">
+  					      <h4>Bayer ASC</h4>
+  					      <p>Bayer ASC is a one-time event website.</p>
+
+  					      <div class="categories">Web Development | Frontend | React.js </div>
+  					   </div>
+
+  			         <div class="link-box">
+  			            <a href="#nolink" target="_blank">Details</a>
+  					      <a href="#" class="popup-modal-dismiss">Close</a>
+  			         </div>
+
+  				   </div>
+             <div id="modal-02" class="popup-modal slider mfp-hide">
+
+               <div class="media">
+                 <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+               </div>
+
+              <div class="description-box">
+                 <h4>Agerabot</h4>
+                 <p>Agerabot is a website for buying trading robot.</p>
+
+                 <div class="categories">Web Development | Frontend | Backend | Laravel | SQL</div>
+              </div>
+
+                <div class="link-box">
+                   <a href="http://dashboard.gudangin.id" target="_blank">Details</a>
+                 <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+              </div>
+	            <div id="modal-03" class="popup-modal slider mfp-hide">
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
@@ -499,7 +567,7 @@
 					      <h4>Gudangin</h4>
 					      <p>Gudangin is a cloud warehouse that can help you manage orders and stocks easily. you can manage multiple stores in multiple marketplace in just one Platform</p>
 
-					      <div class="categories">Web Development</div>
+					      <div class="categories">Web Development | Backend | Laravel | SQL</div>
 					   </div>
 
 			         <div class="link-box">
@@ -509,7 +577,7 @@
 
 				   </div> <!-- /modal-01 -->
 
-				   <div id="modal-02" class="popup-modal slider mfp-hide">
+				   <div id="modal-04" class="popup-modal slider mfp-hide">
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
@@ -529,7 +597,7 @@
 
 				   </div> <!-- /modal-02 -->
 
-				   <div id="modal-03" class="popup-modal slider mfp-hide">
+				   <div id="modal-05" class="popup-modal slider mfp-hide">
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
@@ -549,7 +617,7 @@
 
 				   </div> <!-- /modal-03 -->
 
-				   <div id="modal-04" class="popup-modal slider mfp-hide">
+				   <div id="modal-06" class="popup-modal slider mfp-hide">
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
@@ -569,7 +637,7 @@
 
 				   </div> <!-- /modal-04 -->
 
-				   <div id="modal-05" class="popup-modal slider mfp-hide">
+				   <div id="modal-07" class="popup-modal slider mfp-hide">
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
@@ -589,7 +657,7 @@
 
 				   </div> <!-- /modal-05 -->
 
-				   <div id="modal-06" class="popup-modal slider mfp-hide">
+				   <div id="modal-08" class="popup-modal slider mfp-hide">
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
@@ -950,7 +1018,7 @@
    			<h5>Email Me At</h5>
 
    			<p>
-				dimastriviano@gmail.com
+				dimastrivianto@gmail.com
 			</p>
 
    		</div>

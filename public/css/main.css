@@ -2517,7 +2517,8 @@ footer .row {
 	max-width: 900px;
 }
 footer .social {
-	text-align: right;
+	text-align: center;
+	width: 100%;
 }
 footer .footer-social {
 	display: inline-block;

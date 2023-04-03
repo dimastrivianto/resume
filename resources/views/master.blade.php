@@ -22,8 +22,6 @@
    <link rel="stylesheet" href="{{ asset('css/base.css')}}">
    <link rel="stylesheet" href="{{ asset('css/vendor.css')}}">
 
-   {{-- <link rel="stylesheet" href="{{ asset('css/aos.css')}}"> --}}
-   {{-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}"> --}}
    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
    <!-- script
    ================================================== -->
@@ -61,20 +59,8 @@
 
    <script src="{{ asset('js/jquery-2.1.3.min.js')}}"></script>
 
-   {{-- <script>
-     $('#contactForms').on('submit', function(e) {
-       e.preventDefault();
-       console.log('jalan');
-     })
-   </script> --}}
-   {{-- <script>
-     var formUrl = '{{route("postForm")}}';
-     var token = $('meta[name="csrf-token"]').attr('content');
-     console.log(formUrl ,'iya');
-   </script> --}}
    <script src="{{ asset('js/plugins.js')}}"></script>
-   {{-- <script src="{{ asset('js/aos.js')}}"></script> --}}
-  <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+  {{-- <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script> --}}
    <script src="{{ asset('js/main.js')}}"></script>
    @yield('jsPage')
 
